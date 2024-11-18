@@ -263,6 +263,41 @@ img {
     line-height: 1.6;
   }
 }
+/* Media */
+.media-section {
+  padding: 32px 0;
+  background-color: var(--color-light-grey);
+}
+.media-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 24px;
+}
+.media-link {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-black);
+}
+@media screen and (min-width: 768px) {
+  .media-section {
+    max-width: 768px;
+    padding: 40px 0;
+  }
+  .media-container {
+    display: block;
+  }
+  .media-link {
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .media-section {
+    max-width: 1248px;
+  }
 /* ------------------------------------- */
 
 /* ----MENU----*/
