@@ -13,7 +13,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--color-black);
   background-color: var(--color-white);
   margin: 0;
@@ -208,19 +207,60 @@ img {
     max-width: 768px;
     padding: 72px 0 64px;
   }
-  .hero-container {
-    justify-content: flex-start;
-  }
   .hero-title {
     font-size: 136px;
     line-height: 1.15;
-    letter-spacing: 0.01em;
     margin-bottom: 60px;
+  }
+  .hero-btn-box {
+    justify-content: start;
+  }
+  .arrow-icon {
+    margin-right: 48px;
+  }
+  .hero-text {
+    font-size: 20px;
+    line-height: 1.6;
   }
 }
 @media screen and (min-width: 1158px) {
   .hero-section {
     max-width: 1248px;
+    padding: 168px 0 116px;
+  }
+  .hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .hero-title {
+    line-height: 1.15;
+    margin-bottom: 80px;
+  }
+  .hero-image {
+    background-image: url(../images/developer-photo.jpg);
+    border-radius: 16px;
+    width: 108px;
+    height: 108px;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 465px;
+  }
+  .hero-btn-box {
+    width: 100%;
+    max-width: 416px;
+  }
+  .arrow-icon {
+    margin-right: 48px;
+  }
+  .hero-text-box {
+    width: 100%;
+    max-width: 592px;
+  }
+  .hero-text {
+    font-size: 20px;
+    line-height: 1.6;
   }
 }
 /* ------------------------------------- */
