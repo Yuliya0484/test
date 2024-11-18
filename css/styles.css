@@ -1,9 +1,4 @@
 /* ----base---- */
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
 :root {
   --color-black: #292929;
   --color-accent-green: #00b068;
@@ -151,9 +146,6 @@ img {
 /* Hero */
 .hero-section {
   padding: 96px 0 56px;
-}
-.hero-container {
-  display: flex;
 }
 .hero-title {
   font-family: "Impact", sans-serif;
