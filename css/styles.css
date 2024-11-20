@@ -345,7 +345,7 @@ img {
 }
 .benefits-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 32px;
 }
 .icon {
@@ -375,42 +375,38 @@ img {
   color: var(--color-black);
 }
 /* ----Benefits 768---- */
+
 @media screen and (min-width: 768px) {
   .benefits-title {
-    font-family: "Impact", sans-serif;
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 1.23;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
     color: var(--color-black);
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
-  .benefits-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 32px;
+  .benefits-list-container {
+    width: 100%;
   }
 
   .benefits-item {
-    flex: 1 1 calc(50% - 32px);
-    max-width: calc(50% - 32px);
-    text-align: start;
+    width: calc((100% - 32px) / 2);
   }
   .benefits-item:nth-child(1) {
-    flex: 0 0 50%;
-    margin-left: auto;
-    text-align: left;
-  }
-  .benefits-item:nth-child(2),
-  .benefits-item:nth-child(3) {
-    order: 2;
+    flex: 0 0 100%;
+    padding-left: 382px;
   }
   .benefits-item:nth-child(4) {
-    order: 3;
-    flex: 1 1 100%;
-    text-align: left;
+    flex: 0 0 100%;
+    padding-right: 382px;
+  }
+
+  .benefits-item:nth-child(2),
+  .benefits-item:nth-child(3) {
+    flex: 0 0 45.45%;
+    margin: 0;
+  }
+  .benefits-item:nth-child(3) {
+    margin-left: auto;
   }
   .icon {
     border-radius: 8px;
@@ -422,9 +418,6 @@ img {
     stroke-linejoin: round;
     stroke: var(--color-accent-green);
   }
-
-  /* not checked */
-
   .benefits-list-title {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
