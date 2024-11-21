@@ -65,14 +65,14 @@ img {
   color: var(--color-accent-green);
 }
 .container {
-  max-width: 320px;
+  min-width: 320px;
   padding: 0 20px;
   margin: 0 auto;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    min-width: 768px;
     padding: 0 32px;
   }
   .logo {
@@ -80,9 +80,10 @@ img {
     letter-spacing: 0.05em;
   }
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
+    padding: 0 32px;
   }
 }
 
@@ -332,7 +333,26 @@ img {
     letter-spacing: 0.03em;
   }
 }
+.techskils-title {
+  margin-bottom: 100px;
+}
+.main-footer {
+  margin-top: 100px;
+}
+
+/* ------------------------- */
+/* ------------------------- */
 /* ----Benefits 320-360---- */
+.animate-on-scroll {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
 .benefits-title {
   font-family: "Impact", sans-serif;
   font-weight: 400;
@@ -379,7 +399,7 @@ img {
 
 /* ----Benefits 768---- */
 
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 768px) {
   .benefits-title {
     font-size: 108px;
     line-height: 1.15;
@@ -432,10 +452,7 @@ img {
   }
 }
 /* ----Benefits 1280---- */
-@media screen and (min-width: 1280px) {
-  /* .benefits-section {
-    max-width: 1248px;
-  } */
+/*@media screen and (min-width: 1280px) {
   .benefits-title-container {
     display: flex;
   }
@@ -450,13 +467,63 @@ img {
     background-size: cover;
     background-position: center;
   }
+}/*
+/* ------------------------ */
+/* ------position-version-- */
+@media screen and (min-width: 768px) {
+  .benefits-title {
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    color: var(--color-black);
+    margin-bottom: 0;
+  }
+  .benefits-list-container {
+    width: 100%;
+    position: relative;
+    padding-top: 240px;
+  }
+
+  .benefits-item {
+    width: calc((100% - 32px) / 2);
+  }
+  .benefits-item:nth-child(1) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .benefits-item:nth-child(4) {
+    flex: 0 0 50%;
+  }
+
+  .benefits-list-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-black);
+    margin-bottom: 16px;
+  }
+  .benefits-list-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: var(--color-black);
+  }
 }
-.animate-on-scroll {
-  opacity: 0;
-  transform: scale(0.8);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-.animate-on-scroll.visible {
-  opacity: 1;
-  transform: scale(1);
+/* ----Benefits 1280---- */
+@media screen and (min-width: 1280px) {
+  .benefits-title-container {
+    display: flex;
+  }
+  .benefits-background-container {
+    width: 100%;
+    background-image: url(../images/decor3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
