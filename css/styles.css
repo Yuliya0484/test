@@ -10,7 +10,6 @@
   --color-hover-grey: #bbbbbb;
 }
 body {
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-black);
@@ -399,76 +398,6 @@ img {
 
 /* ----Benefits 768---- */
 
-/*@media screen and (min-width: 768px) {
-  .benefits-title {
-    font-size: 108px;
-    line-height: 1.15;
-    letter-spacing: 0.02em;
-    color: var(--color-black);
-    margin-bottom: 0;
-  }
-  .benefits-list-container {
-    width: 100%;
-  }
-
-  .benefits-item {
-    width: calc((100% - 32px) / 2);
-  }
-  .benefits-item:nth-child(1) {
-    flex: 0 0 100%;
-    padding-left: 382px;
-  }
-  .benefits-item:nth-child(4) {
-    flex: 0 0 100%;
-    padding-right: 382px;
-  }
-
-  .benefits-item:nth-child(2),
-  .benefits-item:nth-child(3) {
-    flex: 0 0 45.45%;
-    margin: 0;
-  }
-  .benefits-item:nth-child(3) {
-    margin-left: auto;
-  }
-
-  .benefits-list-title {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--color-black);
-    margin-bottom: 16px;
-  }
-  .benefits-list-text {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    color: var(--color-black);
-  }
-}
-/* ----Benefits 1280---- */
-/*@media screen and (min-width: 1280px) {
-  .benefits-title-container {
-    display: flex;
-  }
-  .benefits-background-container {
-    width: 100%;
-    height: 100%;
-    max-width: 536px;
-    max-height: 415px;
-    background-image: url(../images/decor3.png);
-    background-color: inherit;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-}/*
-/* ------------------------ */
 /* ------position-version-- */
 @media screen and (min-width: 768px) {
   .benefits-title {
@@ -477,6 +406,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--color-black);
     margin-bottom: 0;
+    max-width: 704px;
   }
   .benefits-list-container {
     width: 100%;
@@ -492,9 +422,9 @@ img {
     top: 0;
     right: 0;
   }
-  .benefits-item:nth-child(4) {
+  /* .benefits-item:nth-child(4) {
     flex: 0 0 50%;
-  }
+  } */
 
   .benefits-list-title {
     font-family: "Poppins", sans-serif;
@@ -513,6 +443,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: var(--color-black);
+    max-width: 360px;
   }
 }
 /* ----Benefits 1280---- */
@@ -520,10 +451,88 @@ img {
   .benefits-title-container {
     display: flex;
   }
+  .benefits-title-box {
+    max-width: 682px;
+  }
   .benefits-background-container {
     width: 100%;
     background-image: url(../images/decor3.png);
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+/* ----Footer 320px---- */
+.section {
+  padding: 40px 0 24px;
+}
+.footer {
+  border-top: 1px solid var(--light-grey);
+}
+.footer-logo {
+  font-family: "Impact", sans-serif;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  padding: 40px 0 32px;
+  color: var(--color-black);
+  text-transform: uppercase;
+}
+.logo-accent {
+  color: var(--color-accent-green);
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.link {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--color-black);
+}
+
+.copyright-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.copyright-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--color-black);
+}
+/* ----Footer 768px---- */
+@media screen and (min-width: 768px) {
+  .footer-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .copyright-box {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .copy {
+    margin-right: 8px;
+  }
+}
+/* ----Footer 1280px---- */
+@media screen and (min-width: 1280px) {
+  .footer-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
+  .footer-logo {
+    padding: 0;
   }
 }
