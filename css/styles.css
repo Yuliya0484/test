@@ -535,4 +535,7 @@ img {
   .footer-logo {
     padding: 0;
   }
+  .footer-list {
+    margin-bottom: 0;
+  }
 }
