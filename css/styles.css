@@ -199,7 +199,8 @@ img {
   background-color: var(--color-light-accent);
   transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.arrow-text:hover,
+.arrow-text:focus,
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--color-accent-green);
@@ -213,26 +214,7 @@ img {
   position: absolute;
   top: 32px;
   left: 42px;
-  animation: spin 7s linear infinite;
 }
-/* .arrow-text:activ,
-.arrow-text:hover,
-.arrow-text:focus {
-  color: var(--color-light-accent);
-} */
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.arrow-icon {
-  stroke: 2px;
-  fill: var(--color-accent-green);
-}
-
 .hero-text {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
